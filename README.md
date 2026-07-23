@@ -224,13 +224,9 @@ trexa/
 
 | Directory | Purpose |
 |-----------|---------|
-| `.kde/` | KDE runtime, engines, experts, and knowledge |
-| `.kde/laboratory/` | Project investigations and decisions |
-| `.kde/engines/` | KDE engine implementations |
-| `.kde/experts/` | Domain expert knowledge |
-| `.kde/knowledge/` | Engineering knowledge base |
+| `.kde/` | KDE runtime and knowledge |
 | `ai/` | AI routing and intelligence |
-| `laboratory/` | Investigation and decision records |
+| `laboratory/` | Investigations and decisions |
 | `src/` | Source code (to be created) |
 
 ---
