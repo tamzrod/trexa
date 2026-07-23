@@ -193,20 +193,24 @@ trexa/
 ├── .kde/                    # Knowledge Discovery Engine runtime
 │   ├── engines/             # KDE engine implementations
 │   ├── experts/             # Domain expert knowledge
-│   └── knowledge/           # Engineering knowledge base
+│   ├── knowledge/           # Engineering knowledge base
+│   ├── laboratory/          # Project investigations and decisions
+│   ├── runtime/             # KDE runtime system
+│   ├── governance/          # Governance policies
+│   └── seeds/               # Seed knowledge
 │
-├── ai/                     # AI routing module
+├── ai/                     # AI routing module (Python)
 │   ├── profiles/           # Reasoning profiles
 │   ├── classifier/          # Task classification
 │   ├── routing/             # Routing engine
 │   ├── ir/                  # Information retrieval
 │   └── telemetry/           # Telemetry system
 │
-├── laboratory/             # Investigation and decision records
+├── laboratory/             # Project investigation records
 │   ├── decisions/           # Technology Decision Records (TDRs)
 │   ├── investigations/      # Investigation documents
-│   ├── methodology/          # Development methodology
-│   ├── experiments/          # Laboratory experiments
+│   ├── methodology/         # Development methodology
+│   ├── experiments/         # Laboratory experiments
 │   └── validations/         # Validation records
 │
 ├── src/                    # Source code (pending)
@@ -220,9 +224,13 @@ trexa/
 
 | Directory | Purpose |
 |-----------|---------|
-| `.kde/` | KDE runtime and knowledge |
+| `.kde/` | KDE runtime, engines, experts, and knowledge |
+| `.kde/laboratory/` | Project investigations and decisions |
+| `.kde/engines/` | KDE engine implementations |
+| `.kde/experts/` | Domain expert knowledge |
+| `.kde/knowledge/` | Engineering knowledge base |
 | `ai/` | AI routing and intelligence |
-| `laboratory/` | Investigations and decisions |
+| `laboratory/` | Investigation and decision records |
 | `src/` | Source code (to be created) |
 
 ---
