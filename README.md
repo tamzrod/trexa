@@ -190,14 +190,30 @@ npm install
 
 ```
 trexa/
-├── .kde/                    # Knowledge Discovery Engine runtime
+├── .kde/                    # KDE Runtime (Bootstrap Authority)
 │   ├── engines/             # KDE engine implementations
 │   ├── experts/             # Domain expert knowledge
 │   ├── knowledge/           # Engineering knowledge base
-│   ├── laboratory/          # Project investigations and decisions
 │   ├── runtime/             # KDE runtime system
 │   ├── governance/          # Governance policies
 │   └── seeds/               # Seed knowledge
+│
+├── docs/                    # Human Documentation (per TREXA-INV-020)
+│   ├── README.md            # Documentation entry point
+│   ├── application/         # Product documentation
+│   │   ├── getting-started/ # Quick start guides
+│   │   ├── guides/         # User guides
+│   │   ├── api/            # API documentation
+│   │   ├── reference/       # Technical reference
+│   │   ├── architecture/    # System architecture
+│   │   └── roadmap/        # Product roadmap
+│   └── kde/                 # KDE methodology
+│       ├── methodology/     # AI-First methodology
+│       ├── principles/      # Engineering principles
+│       ├── governance/      # Governance policies
+│       ├── runtime-concepts/# KDE concepts
+│       ├── reviews/         # KDE reviews
+│       └── history/         # KDE history
 │
 ├── ai/                     # AI routing module (Python)
 │   ├── profiles/           # Reasoning profiles
@@ -206,12 +222,14 @@ trexa/
 │   ├── ir/                  # Information retrieval
 │   └── telemetry/           # Telemetry system
 │
-├── laboratory/             # Project investigation records
+├── laboratory/             # Engineering Laboratory (Evidence Base)
 │   ├── decisions/           # Technology Decision Records (TDRs)
 │   ├── investigations/      # Investigation documents
 │   ├── methodology/         # Development methodology
 │   ├── experiments/         # Laboratory experiments
-│   └── validations/         # Validation records
+│   ├── evidence/           # Evidence artifacts
+│   ├── planning/           # Planning documents
+│   └── reviews/            # Review documents
 │
 ├── src/                    # Source code (pending)
 │
@@ -220,11 +238,22 @@ trexa/
 └── .gitignore             # Git ignore rules
 ```
 
+### Documentation Architecture
+
+Trexa uses a **Tripartite Documentation Architecture** per TREXA-INV-020:
+
+| Domain | Directory | Purpose | Consumer |
+|--------|-----------|---------|----------|
+| **KDE Runtime** | `.kde/` | Framework consumed by KDE | Runtime |
+| **Human Docs** | `docs/` | User and developer documentation | Humans |
+| **Laboratory** | `laboratory/` | Evidence-based engineering | Evidence |
+
 ### Key Directories
 
 | Directory | Purpose |
 |-----------|---------|
-| `.kde/` | KDE runtime and knowledge |
+| `.kde/` | KDE runtime and framework |
+| `docs/` | Human-readable documentation |
 | `ai/` | AI routing and intelligence |
 | `laboratory/` | Investigations and decisions |
 | `src/` | Source code (to be created) |
@@ -275,8 +304,8 @@ trexa/
 
 ### How to Contribute
 
-1. **Read the Documentation** — Start with this README and approved TDRs
-2. **Understand the Methodology** — Review `laboratory/methodology/`
+1. **Read the Documentation** — Start with [docs/](docs/) and approved TDRs
+2. **Understand the Methodology** — Review [docs/kde/methodology/](docs/kde/methodology/)
 3. **Follow the Investigation Process** — Don't implement without investigation
 4. **Get Human Approval** — Significant changes require human authorization
 
@@ -286,7 +315,7 @@ trexa/
 |------|---------|
 | Bug Reports | Open issue with evidence |
 | Feature Requests | Propose via investigation |
-| Documentation | Submit PR with updates |
+| Documentation | Submit PR to [docs/](docs/) |
 | Code Changes | Implement after approval |
 
 ### Important Guidelines
@@ -347,9 +376,11 @@ Trexa's engineering knowledge is derived from validated domain expertise:
 
 | Document | Description |
 |----------|-------------|
-| [TREXA-INV-006](laboratory/investigations/TREXA-INV-006.md) | SLD Domain Definition |
-| [TREXA-INV-011](laboratory/investigations/TREXA-INV-011.md) | Foundation Architecture |
-| [AI-FIRST-METHODOLOGY](laboratory/methodology/AI-FIRST-METHODOLOGY.md) | Development Methodology |
+| [Documentation Hub](docs/) | Full documentation directory |
+| [Application Docs](docs/application/) | Product documentation |
+| [KDE Methodology](docs/kde/) | Engineering methodology |
+| [TREXA-INV-006](laboratory/investigations/TREXA-INV-006/README.md) | SLD Domain Definition |
+| [TREXA-INV-011](laboratory/investigations/TREXA-INV-011/README.md) | Foundation Architecture |
 | [TDR-001](laboratory/decisions/TDR-001.md) | JointJS Decision |
 | [TDR-002](laboratory/decisions/TDR-002.md) | TypeScript Decision |
 | [TDR-003](laboratory/decisions/TDR-003.md) | React Decision |
@@ -365,5 +396,6 @@ For questions or discussions about Trexa:
 
 ---
 
-*Last updated: 2026-07-23*
+*Last updated: 2026-07-24*
 *Version: 0.1.0*
+*Documentation Architecture: TREXA-INV-020*
