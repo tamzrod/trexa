@@ -69,6 +69,24 @@ The Laboratory contains **ALL** engineering artifacts:
 3. **Human Authorization** - Significant changes require human approval
 4. **Traceability Always** - Every conclusion must trace to evidence
 
+## Naming Conventions
+
+All laboratory artifacts **MUST** follow the naming conventions:
+
+| Artifact Type | Directory | Prefix | Example |
+|--------------|-----------|--------|---------|
+| Investigation | `investigations/` | `TREXA-INV-` | `TREXA-INV-012/` |
+| Experiment | `experiments/` | `TREXA-EXP-` | `TREXA-EXP-004/` |
+| Decision | `decisions/` | `TDR-` | `TDR-001.md` |
+| Review | `reviews/` | `TREXA-REV-` | `TREXA-REV-001.md` |
+
+**CRITICAL**: 
+- Investigations **MUST** use `INV-` prefix (not `EXP-`)
+- Experiments **MUST** use `EXP-` prefix
+- Cross-prefixing (e.g., `investigations/TREXA-EXP-XXX/`) is a **naming violation**
+
+See `.kde/governance/NAMING-CONVENTIONS.md` for full policy.
+
 ## Usage
 
 All engineering artifacts for Trexa should be created in this laboratory directory. The KDE Runtime will reference these artifacts but does not own them.
