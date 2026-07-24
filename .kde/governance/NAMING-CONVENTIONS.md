@@ -1,7 +1,7 @@
 # KDE Governance: Laboratory Artifact Naming Conventions
 
 **Document ID**: GOV-NAMING-001
-**Version**: 1.0.0
+**Version**: 1.1.0
 **Date**: 2026-07-24
 **Status**: APPROVED
 **Authority**: KDE Governance
@@ -23,6 +23,7 @@ This policy establishes mandatory naming conventions for all laboratory artifact
 | Investigation | `investigations/` | `TREXA-INV-` | `TREXA-INV-012/` |
 | Experiment | `experiments/` | `TREXA-EXP-` | `TREXA-EXP-004/` |
 | Decision | `decisions/` | `TDR-` | `TDR-001.md` |
+| **Implementation** | `implementations/` | `TREXA-IMP-` | `TREXA-IMP-001/` |
 | Review | `reviews/` | `TREXA-REV-` | `TREXA-REV-001.md` |
 | Investigation (Legacy) | `*/LEGACY/` | Preserve original | `TREXA-INV-012.md` |
 
@@ -33,6 +34,7 @@ This policy establishes mandatory naming conventions for all laboratory artifact
 | `TREXA-INV-*` | `investigations/` |
 | `TREXA-EXP-*` | `experiments/` |
 | `TDR-*` | `decisions/` |
+| `TREXA-IMP-*` | `implementations/` |
 | `TREXA-REV-*` | `reviews/` |
 
 ### Rule 3: ID Sequence
@@ -40,6 +42,7 @@ This policy establishes mandatory naming conventions for all laboratory artifact
 - **Investigations**: Sequential `TREXA-INV-001`, `TREXA-INV-002`, etc.
 - **Experiments**: Sequential `TREXA-EXP-001`, `TREXA-EXP-002`, etc.
 - **Decisions**: Sequential `TDR-001`, `TDR-002`, etc.
+- **Implementations**: Sequential `TREXA-IMP-001`, `TREXA-IMP-002`, etc.
 - **Reviews**: Sequential `TREXA-REV-001`, `TREXA-REV-002`, etc.
 
 ---

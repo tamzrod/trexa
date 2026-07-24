@@ -1,7 +1,7 @@
 # KDE Governance Documentation
 
 **Domain**: KDE Methodology
-**Version**: 1.0.0
+**Version**: 1.1.0
 **Date**: 2026-07-24
 
 ---
@@ -43,9 +43,10 @@ All laboratory artifacts follow standardized naming conventions:
 
 | Artifact Type | Directory | Prefix | Example |
 |--------------|-----------|--------|---------|
-| Investigation | `investigations/` | `TREXA-INV-` | `TREXA-INV-020/` |
+| Investigation | `investigations/` | `TREXA-INV-` | `TREXA-INV-021/` |
 | Experiment | `experiments/` | `TREXA-EXP-` | `TREXA-EXP-001/` |
 | Decision | `decisions/` | `TDR-` | `TDR-001.md` |
+| **Implementation** | `implementations/` | `TREXA-IMP-` | `TREXA-IMP-001/` |
 | Review | `reviews/` | `TREXA-REV-` | `TREXA-REV-001.md` |
 
 ### Naming Rules
@@ -57,6 +58,27 @@ All laboratory artifacts follow standardized naming conventions:
 
 ---
 
+## Engineering Lifecycle
+
+The KDE engineering lifecycle (per TREXA-INV-021):
+
+```
+Investigation → Experiment → Decision → Human Review → IMP → Implementation → Verification
+```
+
+### Artifact Responsibilities
+
+| Artifact | Question | Responsibility |
+|----------|----------|----------------|
+| **Investigation** | Should we? | Analyze feasibility and value |
+| **Experiment** | Can we? | Validate hypotheses |
+| **Decision** | Will we? | Authorize direction |
+| **IMP** | What exactly? | Define implementation contract |
+| **Implementation** | How? | Execute approved work |
+| **Verification** | Done? | Confirm acceptance criteria |
+
+---
+
 ## Policy Files
 
 | File | Description |
@@ -65,4 +87,4 @@ All laboratory artifacts follow standardized naming conventions:
 
 ---
 
-*Per TREXA-INV-020*
+*Per TREXA-INV-020, TREXA-INV-021*
