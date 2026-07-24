@@ -1,0 +1,230 @@
+# Trexa Laboratory Experiments Summary
+
+**Generated**: 2026-07-24  
+**Total Experiments**: 3
+
+---
+
+## Overview
+
+Three experiments were conducted to establish and migrate the Trexa laboratory structure:
+
+| # | ID | Title | Type | Status |
+|---|-----|-------|------|--------|
+| 1 | TREXA-EXP-001 | KDE Runtime Verification | Verification | ✅ Complete |
+| 2 | TREXA-EXP-002 | Laboratory Organization Investigation | Investigation | ✅ Complete |
+| 3 | TREXA-EXP-003 | Laboratory Migration Planning | Implementation | ✅ Complete |
+
+---
+
+## TREXA-EXP-001: KDE Runtime Verification
+
+### Objective
+Verify that the KDE Runtime bootstrap produces a functional, properly structured Runtime environment.
+
+### Precondition
+Runtime must load successfully before testing begins.
+
+### Methodology
+1. Load runtime state from `runtime/state.json`
+2. Verify all required modules exist
+3. Validate configuration files
+4. Execute load test
+
+### Results
+
+| Test | Result |
+|------|--------|
+| Runtime State | ✅ "ready" |
+| Bootstrap Config | ✅ Valid |
+| 11 Required Directories | ✅ All present |
+| Module Verification | ✅ All 9 modules loaded |
+
+### Conclusion
+**HYPOTHESIS CONFIRMED**: The KDE Runtime bootstrap produces a functional, properly structured Runtime environment.
+
+### Files
+- `SPEC.md` - Hypothesis and success criteria
+- `EXECUTION.md` - Test execution and results
+- `RESULT.md` - Conclusions
+- `LEGACY/` - Original preserved file
+
+---
+
+## TREXA-EXP-002: Laboratory Organization Investigation
+
+### Objective
+Investigate whether laboratory artifacts should be organized as single markdown files or self-contained directories.
+
+### Options Investigated
+
+| Option | Description |
+|--------|-------------|
+| A | Single markdown files (current) |
+| B | Self-contained directories |
+| C | Hybrid approach |
+
+### Key Findings
+
+**Scalability Assessment:**
+
+| Scale | Option A | Option B | Option C |
+|-------|----------|----------|----------|
+| 10 artifacts | ✅ Simple | ⚠️ Overhead | ✅ Optimal |
+| 100 artifacts | ⚠️ Manageable | ✅ Optimal | ✅ Optimal |
+| 1000 artifacts | ❌ Unmanageable | ✅ Optimal | ⚠️ Complex |
+| Binary artifacts | ❌ Not supported | ✅ Supported | ❌ Limited |
+
+**Evidence Management:**
+
+| Evidence Type | Option A | Option B |
+|--------------|----------|----------|
+| Screenshots | ❌ | ✅ |
+| Datasets | ❌ | ✅ |
+| Execution logs | ⚠️ External | ✅ Embedded |
+| AI conversations | ⚠️ Copy/paste | ✅ Embedded |
+
+### Conclusion
+
+**Hypothesis PARTIALLY CONFIRMED:**
+
+| Aspect | Finding |
+|--------|---------|
+| Self-contained directories superior for Experiments | ✅ CONFIRMED |
+| Self-contained directories superior for Investigations | ✅ CONFIRMED |
+| Self-contained directories needed for Decisions/Reviews | ❌ NOT CONFIRMED |
+| Immediate migration necessary | ❌ NOT CONFIRMED |
+
+### Recommendations
+
+| Artifact Type | Recommended Structure | Rationale |
+|--------------|---------------------|-----------|
+| Experiments | Option B (Directory) | Highest evidence needs |
+| Investigations | Option B (Directory) | Complex, multi-phase |
+| Decisions | Option A (File) | Simple, text-focused |
+| Reviews | Option A (File) | Decision is final |
+| Planning | Option A (File) | Simple lists |
+
+### Files
+- `SPEC.md` - Investigation scope and methodology
+- `EXECUTION.md` - Analysis performed
+- `RESULT.md` - Conclusions and recommendations
+- `LEGACY/` - Original preserved file
+
+---
+
+## TREXA-EXP-003: Laboratory Migration Planning & Implementation
+
+### Objective
+Design and implement a complete migration strategy to reorganize the Laboratory per TREXA-EXP-002 conclusions.
+
+### Authorization
+- **Design Phase**: Investigation only - no modifications
+- **Implementation Phase**: Authorized to implement migration
+
+### Migration Scope
+
+| Category | Before | After | Action |
+|----------|--------|-------|--------|
+| Experiments | 3 flat .md files | 3 self-contained directories | Migrate |
+| Investigations | 30 flat .md files | 10 self-contained directories | Migrate |
+| Decisions | 3 .md files | 3 .md files | No change |
+| Reviews | 1 .md file | 1 .md file | No change |
+
+### Migration Sequence
+
+| Phase | Name | Risk | Status |
+|-------|------|------|--------|
+| 1 | Pre-Migration Archive | NONE | ✅ Complete |
+| 2 | Documentation Update | LOW | ✅ Complete |
+| 3 | Decisions Verification | NONE | ✅ Complete |
+| 4 | Experiments Migration | MEDIUM | ✅ Complete |
+| 5 | Investigations Migration | HIGH | ✅ Complete |
+| 6 | Cross-Reference Update | MEDIUM | ✅ Complete |
+| 7 | Verification | NONE | ✅ Complete |
+
+### New Directory Structure
+
+**Experiments:**
+```
+laboratory/experiments/
+└── TREXA-EXP-NNN/
+    ├── SPEC.md           # Hypothesis, criteria
+    ├── EXECUTION.md      # Execution log
+    ├── RESULT.md         # Conclusions
+    ├── README.md
+    ├── LEGACY/           # Original preserved
+    ├── evidence/         # Evidence storage
+    └── artifacts/         # Generated files
+```
+
+**Investigations:**
+```
+laboratory/investigations/
+└── TREXA-INV-NNN/
+    ├── SPEC.md           # Scope, questions
+    ├── ANALYSIS.md       # Consolidated analysis
+    ├── CONCLUSION.md     # Conclusions
+    ├── README.md
+    ├── LEGACY/           # Original preserved
+    ├── evidence/
+    └── artifacts/
+```
+
+### Deliverables
+
+1. ✅ Laboratory Inventory
+2. ✅ Artifact Classification Matrix
+3. ✅ Target Directory Specification
+4. ✅ Naming Convention Specification
+5. ✅ Migration Sequence
+6. ✅ Compatibility Strategy
+7. ✅ Rollback Strategy
+8. ✅ Migration Verification Procedure
+9. ✅ Risk Assessment
+10. ✅ Complete Migration Specification
+
+### Files
+- `SPEC.md` - Migration specification
+- `EXECUTION.md` - Execution log
+- `RESULT.md` - Migration results
+- `LEGACY/` - Original preserved file
+
+---
+
+## Experiment Chain
+
+```
+TREXA-EXP-001 (Verification)
+    ↓
+TREXA-EXP-002 (Investigation)
+    ↓
+TREXA-EXP-003 (Implementation)
+```
+
+### Dependencies
+- TREXA-EXP-002 depends on TREXA-EXP-001 establishing the Runtime
+- TREXA-EXP-003 depends on TREXA-EXP-002 providing the migration plan
+
+---
+
+## Results Summary
+
+| Experiment | Result | Key Output |
+|------------|--------|------------|
+| TREXA-EXP-001 | ✅ PASSED | KDE Runtime verified functional |
+| TREXA-EXP-002 | ✅ PASSED | Migration recommended |
+| TREXA-EXP-003 | ✅ PASSED | Migration implemented |
+
+### Artifacts Migrated
+- **3 Experiments** → 3 self-contained directories
+- **30 Investigation files** → 10 self-contained directories
+- **All original files preserved** in LEGACY/ subdirectories
+
+### Backward Compatibility
+- `COMPATIBILITY_INDEX.md` maps old paths to new locations
+- Original files preserved in `laboratory_BACKUP_20260724_014010/`
+
+---
+
+*Experiments conducted per KDE Runtime governance*
